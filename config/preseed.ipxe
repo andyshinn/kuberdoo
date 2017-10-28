@@ -1,0 +1,4 @@
+#!ipxe
+kernel --name kernel http://mirror.leaseweb.net/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/linux
+initrd --name initrd http://mirror.leaseweb.net/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/ubuntu-installer/amd64/initrd.gz
+boot kernel initrd=initrd auto=true hostname=preseed domain=kuberdoo keymap=us url=tftp://192.168.88.1/preseed.cfg
